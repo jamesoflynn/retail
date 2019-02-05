@@ -1,0 +1,80 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>wemanibank</groupId>
+  <artifactId>wemanibank.retail</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>retail</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-core</artifactId>
+  		<version>5.1.4.RELEASE</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot</artifactId>
+  		<version>2.1.2.RELEASE</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-autoconfigure</artifactId>
+  		<version>2.1.2.RELEASE</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter</artifactId>
+  		<version>2.1.2.RELEASE</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-web</artifactId>
+  		<version>2.1.2.RELEASE</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>javax.persistence</groupId>
+  		<artifactId>javax.persistence-api</artifactId>
+  		<version>2.2</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>io.swagger</groupId>
+  		<artifactId>swagger-core</artifactId>
+  		<version>2.0.0-rc2</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>io.swagger</groupId>
+  		<artifactId>swagger-annotations</artifactId>
+  		<version>2.0.0-rc2</version>
+  	</dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+	<dependency>
+	    <groupId>org.mockito</groupId>
+	    <artifactId>mockito-core</artifactId>
+	    <version>2.23.4</version>
+	    <scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>io.cucumber</groupId>
+		<artifactId>cucumber-java8</artifactId>
+		<version>4.2.0</version>
+		<scope>test</scope>
+	</dependency>
+  </dependencies>
+  <build>
+  </build>
+</project>
