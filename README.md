@@ -11,13 +11,19 @@ Think of your personal bank account experience When in doubt, go for the simples
 - Deposit and Withdrawal
 - Account statement (date, amount, balance)
 - Statement printing
- 
+
 # User Stories
 ##### US 1:
 **In order to** save money  
 **As a** bank client  
 **I want to** make a deposit in my account  
- 
+
+Interpretation: A "bank" HAS "clients", a "client HAS "account(s)", an "account contains, has, "money"
+
+    Bank -> Client -> Account -> Money
+
+Step 1: An account has Money, which can be deposited.
+
 ##### US 2: 
 **In order to** retrieve some or all of my savings  
 **As a** bank client  
