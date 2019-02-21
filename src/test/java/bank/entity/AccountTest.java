@@ -19,6 +19,7 @@ public class AccountTest extends TestCase {
 	@Test // test that we can withdraw money from an account.
 	public void testAccoundWithdrawal() {
 		Account account = new Account();
+		account.deposit(20.0);
 		double amount = account.withdraw(10.0);
 		Assert.assertTrue(amount == 10.0);
 	}
