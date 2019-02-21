@@ -15,4 +15,11 @@ public class AccountTest extends TestCase {
 		double amount = account.deposit(10.0);
 		Assert.assertTrue(amount == 10.0);
 	}
+
+	@Test // test that we can withdraw money from an account.
+	public void testAccoundWithdrawal() {
+		Account account = new Account();
+		double amount = account.withdraw(10.0);
+		Assert.assertTrue(amount == 10.0);
+	}
 }

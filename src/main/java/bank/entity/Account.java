@@ -14,4 +14,13 @@ public class Account {
 		}
 		return balance;
 	}
+
+	public double withdraw(double amount) {
+		double withdrawn = 0.0d;
+		if (amount <= balance) {
+			balance -= amount;
+			withdrawn = amount;
+		}
+		return withdrawn;
+	}
 }
