@@ -33,6 +33,12 @@ public class Ledger {
 	}
 
 	public double withdraw(double amount) {
-		return 0.0;
+		Entry entry = null;
+		if (amount > 0) {
+			entry = new Entry();
+			entry.withdrawal = amount;
+			entries.add(entry);
+		}
+		return entry != null ? entry.withdrawal : 0.0;
 	}
 }
