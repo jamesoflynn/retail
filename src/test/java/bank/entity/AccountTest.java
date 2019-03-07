@@ -33,5 +33,9 @@ public class AccountTest extends TestCase {
 		Statement statement = account.getStatement();
 		List<Ledger.Entry> operations = statement.getOperations();
 		Assert.assertTrue(operations.size() == 2);
+		Ledger.Entry first = operations.get(0);
+		Assert.assertTrue(first.getDeposit() == 10.0);
+		Ledger.Entry second = operations.get(1);
+		Assert.assertTrue(second.getWithdrawal() == 5.0);
 	}
 }
