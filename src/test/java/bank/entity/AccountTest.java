@@ -1,7 +1,8 @@
 package bank.entity;
 
+import java.util.List;
+
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 import junit.framework.TestCase;
@@ -22,5 +23,15 @@ public class AccountTest extends TestCase {
 		account.deposit(20.0);
 		double amount = account.withdraw(10.0);
 		Assert.assertTrue(amount == 10.0);
+	}
+
+	@Test // Retrieve a statement of the account.
+	public void testAccountStatement() {
+		Account account = new Account();
+		account.deposit(10.0);
+		account.withdraw(5.0);
+		Statement statement = account.getStatement();
+		List<Ledger.Entry> operations = statement.getOperations();
+		Assert.assertTrue(operations.size() == 2);
 	}
 }

@@ -33,4 +33,9 @@ public class Account {
 		}
 		return withdrawn;
 	}
+
+	public Statement getStatement() {
+		Statement statement = Statement.newStatement(this);
+		return statement;
+	}
 }
