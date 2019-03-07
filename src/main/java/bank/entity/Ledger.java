@@ -14,6 +14,18 @@ public class Ledger {
 		Entry() {
 			this.date = LocalDateTime.now();
 		}
+
+		public LocalDateTime getDate() {
+			return date;
+		}
+
+		public double getDeposit() {
+			return deposit;
+		}
+
+		public double getWithdrawal() {
+			return withdrawal;
+		}
 	}
 
 	private List<Entry> entries;
@@ -40,5 +52,9 @@ public class Ledger {
 			entries.add(entry);
 		}
 		return entry != null ? entry.withdrawal : 0.0;
+	}
+
+	protected List<Entry> getEntries() {
+		return entries;
 	}
 }

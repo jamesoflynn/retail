@@ -15,6 +15,6 @@ public class Statement {
 	}
 
 	public List<Ledger.Entry> getOperations() {
-		return null;
+		return account.getEntries();
 	}
 }

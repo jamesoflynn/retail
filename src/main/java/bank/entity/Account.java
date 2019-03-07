@@ -1,6 +1,9 @@
 package bank.entity;
 
 import java.time.LocalDateTime;
+import java.util.List;
+
+import bank.entity.Ledger.Entry;
 
 public class Account {
 
@@ -37,5 +40,9 @@ public class Account {
 	public Statement getStatement() {
 		Statement statement = Statement.newStatement(this);
 		return statement;
+	}
+
+	public List<Entry> getEntries() {
+		return ledger.getEntries();
 	}
 }
