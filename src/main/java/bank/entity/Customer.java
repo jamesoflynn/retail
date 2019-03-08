@@ -9,4 +9,8 @@ public class Customer {
 		this.name = name;
 		this.account = new Account();
 	}
+
+	public Account getAccount() {
+		return account;
+	}
 }
