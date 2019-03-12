@@ -37,3 +37,10 @@ Step 2: Money can be withdrawn from an Account which has enough balance.
 **I want to** see the history (operation, date, amount, balance)  of my operations
 
 Interpretation: as a client, I want a Ledger of the operations I have carried out on my Account, which I want to consult on the basis of a time window.
+
+A new user story to take this a little further
+
+##### US 4:
+**In order to** make money
+**As a** bank
+**I want to** have customers that will places their money in accounts provided by the bank.
