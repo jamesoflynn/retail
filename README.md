@@ -41,6 +41,6 @@ Interpretation: as a client, I want a Ledger of the operations I have carried ou
 A new user story to take this a little further
 
 ##### US 4:
-**In order to** make money
-**As a** bank
+**In order to** make money  
+**As a** bank  
 **I want to** have customers that will places their money in accounts provided by the bank.
