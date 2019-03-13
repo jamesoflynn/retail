@@ -5,4 +5,3 @@ Feature: Create a new Bank customer to obtain an account.
     Given "Aaron" is not a bank customer yet
     When a "Aaron" asks to open an account.
     Then a customer object is created for the bank.
-        
