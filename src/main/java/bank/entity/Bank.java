@@ -24,6 +24,6 @@ public class Bank {
 	}
 
 	public static Customer getCustomer(String name) {
-		return null;
+		return self.customers.get(name);
 	}
 }
