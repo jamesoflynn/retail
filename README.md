@@ -46,6 +46,6 @@ A new user story to take this a little further
 **I want to** have customers that will places their money in accounts provided by the bank.
 
 ##### US 5:
-**In order to** make deposits and withdrawals . 
-**As a** Bank client . 
+**In order to** make deposits and withdrawals  
+**As a** Bank client  
 **I want to** Access my account from a banking service.
