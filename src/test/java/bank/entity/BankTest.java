@@ -13,4 +13,11 @@ public class BankTest {
 		Assert.assertNotNull(customer);
 	}
 
+	@Test
+	public void testGetCustomer() {
+		Bank.createNewCustomer("Barack");
+		Customer customer = Bank.getCustomer("Barack");
+		Assert.assertNotNull(customer);
+	}
+	
 }

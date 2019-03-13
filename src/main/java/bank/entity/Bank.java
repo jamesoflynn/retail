@@ -22,4 +22,8 @@ public class Bank {
 		}
 		return customer;
 	}
+
+	public static Customer getCustomer(String name) {
+		return null;
+	}
 }
