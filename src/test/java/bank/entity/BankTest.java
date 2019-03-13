@@ -1,11 +1,11 @@
 package bank.entity;
 
-import static org.junit.Assert.*;
-
 import org.junit.Assert;
 import org.junit.Test;
 
-public class BankTest {
+import junit.framework.TestCase;
+
+public class BankTest extends TestCase {
 
 	@Test
 	public void testCreateNewCustomer() {
