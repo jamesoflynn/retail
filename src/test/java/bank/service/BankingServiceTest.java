@@ -1,14 +1,15 @@
 package bank.service;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
-public class BankingServiceTest {
+import junit.framework.TestCase;
+
+public class BankingServiceTest extends TestCase {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testNewCustomer() {
+		BankingService service = new BankingService();
+		//Customer customer = service.createNewCustomer("Aaron");
 	}
 
 }
