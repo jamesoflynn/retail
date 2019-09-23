@@ -1,10 +1,7 @@
 package bank.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import bank.entity.Customer;
 import bank.service.BankingService;
@@ -22,6 +19,7 @@ public class CustomerService {
 	}
 
 	@RequestMapping("/customers")
+	@GetMapping
 	@ResponseBody
 	public Customer getCustomer(@RequestParam() String name) {
 		Customer customer = bankingService.getCustomer(name);
