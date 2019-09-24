@@ -1,5 +1,6 @@
 package bank.entity;
 
+import bank.Bank;
 import org.junit.Assert;
 import org.junit.Test;
 
