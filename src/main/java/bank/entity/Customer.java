@@ -10,6 +10,7 @@ public class Customer {
 		this.account = new Account();
 	}
 
+	public String getName() { return name;}
 	public Account getAccount() {
 		return account;
 	}
