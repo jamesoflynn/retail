@@ -13,7 +13,7 @@ public class BankingService {
 	@Autowired
 	private CustomerStore customers;
 
-	public Customer createNewCustomer(String name) {
+	public Customer createCustomer(String name) {
 		Customer customer = null;
 		if (!customers.hasExistingCustomer(name)) {
 			customer = new Customer(name);

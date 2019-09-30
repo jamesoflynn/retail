@@ -32,7 +32,7 @@ public class BankingServiceTest {
 	public void testNewCustomer() {
 		when(customerStore.addNewCustomer(any(Customer.class))).thenAnswer(returnsFirstArg());
 //		doAnswer(returnsFirstArg()).when(customerStore).addNewCustomer(any(Customer.class));
-		Customer customer = service.createNewCustomer("Aaron");
+		Customer customer = service.createCustomer("Aaron");
 		Assert.assertNotNull(customer);
 		Assert.assertEquals("Aaron", customer.getName());
 	}
