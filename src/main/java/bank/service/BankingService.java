@@ -10,8 +10,13 @@ import bank.entity.Customer;
 
 @Service
 public class BankingService {
+
 	@Autowired
 	private CustomerStore customers;
+
+	public void setCustomerStore(CustomerStore store) {
+		this.customers = store;
+	}
 
 	public Customer createCustomer(String name) {
 		Customer customer = null;

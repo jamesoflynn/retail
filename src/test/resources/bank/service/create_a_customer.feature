@@ -1,7 +1,7 @@
 @start
 Feature: Create a new Bank customer to obtain an account.
 
-  @CreatCustomer
+  @CreateCustomer
   Scenario Outline: Customer asks to have an account with the bank
     Given  A customer with <name> is not a bank customer yet
     When <name> asks to open an account.
