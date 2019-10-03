@@ -1,7 +1,6 @@
 package bank.web;
 
 import bank.entity.Customer;
-import bank.repository.CustomerStore;
 import bank.service.BankingService;
 import bank.web.transferobjects.CustomerRequest;
 import org.junit.Assert;

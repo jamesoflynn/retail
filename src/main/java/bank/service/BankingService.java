@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import bank.entity.Account;
-import bank.Bank;
 import bank.entity.Customer;
 
 @Service

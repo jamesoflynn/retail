@@ -1,13 +1,11 @@
 package bank.service;
 
 import bank.entity.Customer;
-import bank.repository.CustomerStore;
+import bank.repository.DBCustomerStore;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 
-import junit.framework.TestCase;
-import org.mockito.AdditionalAnswers;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
@@ -15,13 +13,12 @@ import org.mockito.junit.MockitoRule;
 
 import static org.mockito.AdditionalAnswers.returnsFirstArg;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.when;
 
 public class BankingServiceTest {
 
 	@Mock
-	CustomerStore customerStore;
+	DBCustomerStore DBCustomerStore;
 
 	@Rule
 	public MockitoRule mockitoRule = MockitoJUnit.rule();
@@ -30,7 +27,7 @@ public class BankingServiceTest {
 
 	@Test
 	public void testNewCustomer() {
-		when(customerStore.addNewCustomer(any(Customer.class))).thenAnswer(returnsFirstArg());
+		when(DBCustomerStore.addNewCustomer(any(Customer.class))).thenAnswer(returnsFirstArg());
 //		doAnswer(returnsFirstArg()).when(customerStore).addNewCustomer(any(Customer.class));
 		Customer customer = service.createCustomer("Aaron");
 		Assert.assertNotNull(customer);
